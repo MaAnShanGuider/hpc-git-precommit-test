@@ -31,7 +31,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-var": 2
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
@@ -45,7 +47,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.js": "eslint"
+    "src/**/*.{vue, js}": "eslint"
   },
   "browserslist": [
     "> 1%",

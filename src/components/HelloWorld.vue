@@ -35,6 +35,14 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {};
+  },
+  methods: {
+    testGitPrecommit() {
+      let t1 = "迭代到";
+    }
   }
 }
 </script>
