@@ -44,10 +44,14 @@
     }
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
   },
   "lint-staged": {
-    "src/**/*.{vue, js}": "eslint"
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "browserslist": [
     "> 1%",
