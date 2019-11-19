@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     testGitPrecommit() {
-      let t1 = "迭代到";
+      // let t1 = "迭代到";
     }
   }
 }
