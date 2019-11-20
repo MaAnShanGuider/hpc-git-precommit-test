@@ -40,6 +40,7 @@ export default {
     return {};
   },
   methods: {
+	  anyFUnc9() {}
   }
 }
 </script>
