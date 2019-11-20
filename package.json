@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0",
-    "foo": "echo \"fooo\" && exit 0",
-    "bar": "echo \"bar\" && exit 0"
+	"test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 1",
+	"foo": "echo \"fooo\" && exit 0",
+	"bar": "echo \"bar\" && exit 0"
 
   },
   "dependencies": {
@@ -57,6 +57,7 @@
       "git add"
     ]
   },
+  
   "pre-commit": [
     "foo",
     "bar",
