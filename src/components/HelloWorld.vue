@@ -40,9 +40,6 @@ export default {
     return {};
   },
   methods: {
-    testGitPrecommit() {
-      // let t1 = "迭代到";
-    }
   }
 }
 </script>

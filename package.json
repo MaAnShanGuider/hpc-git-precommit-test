@@ -6,10 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-	"test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 1",
-	"foo": "echo \"fooo\" && exit 0",
-	"bar": "echo \"bar\" && exit 0"
-
+    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0",
+    "foo": "echo \"fooo\" && exit 0",
+	"bar": "echo \"bar\" && exit 0",
+	"lint-staged": "lint-staged && echo \"刘德华唱歌很好听\""
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -52,18 +52,17 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "esw --fix",
-      "git add"
-    ]
+	"{src,config}/**/*.{js,jsx,vue}": [
+		"esw --fix",
+		"git add"
+	]
+	
   },
-  
   "pre-commit": [
     "foo",
     "bar",
-	"test",
-	"lint-staged"
-
+    "test",
+    "lint-staged"
   ],
   "browserslist": [
     "> 1%",
