@@ -61,7 +61,8 @@
   "pre-commit": [
     "foo",
     "bar",
-    "test"
+	"test",
+	"lint-staged"
 
   ],
   "browserslist": [
