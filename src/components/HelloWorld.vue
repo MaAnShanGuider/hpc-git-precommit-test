@@ -36,11 +36,15 @@ export default {
   props: {
     msg: String
   },
-  data() {
+
+
+
+      
+  data    () {
     return {};
   },
   methods: {
-	  anyFUnc9() {}
+
   }
 }
 </script>

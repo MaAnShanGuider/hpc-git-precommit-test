@@ -58,7 +58,12 @@
 	]
 	
   },
-
+  "pre-commit": [
+    "foo",
+    "bar",
+    "test",
+    "lint-staged"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions"
