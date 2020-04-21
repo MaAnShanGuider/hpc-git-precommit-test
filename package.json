@@ -48,9 +48,7 @@
       "autoprefixer": {}
     }
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
+
   "lint-staged": {
 	"{src,config}/**/*.{js,jsx,vue}": [
 		"esw --fix",
